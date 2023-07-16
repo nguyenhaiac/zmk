@@ -31,9 +31,9 @@
 /* Enable spi2 bus and the trackball, and define their pins */
 &spi0 {
   status = "okay";
-  sck-pin =  <15>;
-  mosi-pin = <16>;
-  miso-pin = <17>;
+  sck-pin =  <45>;
+  mosi-pin = <28>;
+  miso-pin = <3>;
   cs-gpios = <&gpio1 11 GPIO_ACTIVE_LOW>;
 };
 
