@@ -16,25 +16,28 @@
 
 &kscan0 {
 	col-gpios
-		= <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-		, <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-		, <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-		, <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-		, <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-		, <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		= <&pro_micro 0 GPIO_ACTIVE_HIGH>
+		, <&pro_micro 2 GPIO_ACTIVE_HIGH>
+		, <&pro_micro 3 GPIO_ACTIVE_HIGH>
+		, <&pro_micro 20 GPIO_ACTIVE_HIGH>
+		, <&pro_micro 19 GPIO_ACTIVE_HIGH>
+		, <&pro_micro 18 GPIO_ACTIVE_HIGH>
 		;
 };
 
-// trackball bus
-&spi0 {
-	status = "okay"; //okay
-	sck-pin = <8>;
-	mosi-pin = <17>;
-	miso-pin = <17>; // same as mosi (3-wire spi)
-	cs-gpios = <&gpio0 20 GPIO_ACTIVE_LOW>;
+
+
+
+/* Enable spi2 bus and the trackball, and define their pins */
+&spi2 {
+  status = "okay";
+  sck-pin =  <&gpio1 13 GPIO_ACTIVE_LOW>;
+  mosi-pin = <&gpio0 28 GPIO_ACTIVE_LOW>;
+  miso-pin = <&gpio0 3 GPIO_ACTIVE_LOW>;
+  cs-gpios = <&gpio1 11 GPIO_ACTIVE_LOW>;
 };
 
 &trackball {
-	status = "okay"; //okay
-	irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+  status = "okay";
+  irq-gpios = <&gpio0 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 };
