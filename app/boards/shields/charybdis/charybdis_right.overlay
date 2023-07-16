@@ -29,7 +29,7 @@
 
 
 /* Enable spi2 bus and the trackball, and define their pins */
-&spi2 {
+&spi0 {
   status = "okay";
   sck-pin =  <15>;
   mosi-pin = <16>;
