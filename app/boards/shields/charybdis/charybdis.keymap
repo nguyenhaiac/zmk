@@ -17,7 +17,7 @@
     &kp LSHFT   &kp Z   &kp X   &kp C       &kp V   &kp B                 &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
     &kp LSHFT   &kp Z   &kp X   &kp C       &kp V   &kp B                 &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
                         &kp X   &kp C       &kp V   &kp B                 &kp N   &kp M  &kp COMMA  &kp DOT  
-                &kp Z   &kp X   &kp C       &kp V   &kp B                 &kp N   &kp M  &kp COMMA  &kp DOT  
+                &kp Z   &kp X   &kp C       &kp V   &kp B                 &kp N   &kp M   
             >;
             trackball-bindings = <&tmv_coarse>;
         };
@@ -30,7 +30,7 @@
     &kp LEFT_ALT    &trans      &trans      &trans      &kp MINUS   &kp PLUS             &kp N1     &kp N2    &kp N3    &kp DOT    &trans   &trans
     &kp LSHFT   &kp Z   &kp X   &kp C       &kp V   &kp B                 &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
                         &kp X   &kp C       &kp V   &kp B                 &kp N   &kp M  &kp COMMA  &kp DOT  
-                &kp Z   &kp X   &kp C       &kp V   &kp B                 &kp N   &kp M  &kp COMMA  &kp DOT  
+                &kp Z   &kp X   &kp C       &kp V   &kp B                 &kp N   &kp M    
             >;
             trackball-bindings = <&tmv_fine>;
         };
@@ -43,7 +43,7 @@
     &trans  &out OUT_TOG    &trans      &trans      &trans          &trans            &kp MINUS   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
                   &kp LSHFT   &kp Z   &kp X   &kp C       &kp V   &kp B                 &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
                         &kp X   &kp C       &kp V   &kp B                 &kp N   &kp M  &kp COMMA  &kp DOT  
-                &kp Z   &kp X   &kp C       &kp V   &kp B                 &kp N   &kp M  &kp COMMA  &kp DOT  
+                &kp Z   &kp X   &kp C       &kp V   &kp B                 &kp N   &kp M    
             >;
             trackball-bindings = <&tsl_fine>;
         };
